@@ -5,14 +5,15 @@
 #  123456789012345678901234
 a$DateTimeStart <- strptime(substr(a$FileName, 10, 24), "%Y%m%d_%H%M%S")
 
-as.Date(a$DateTimeStart, tz=XXX) # la date
+as.Date(a$DateTimeStart, tz=XXX) # la date, il faut ajuster la TimeZone
 a$DateNuit <- ifelse(hh < 12, as.Date(a$DateTimeStart, tz=XXX) - 1, as.Date(a$DateTimeStart,tz=XXX)) # date nuit
 
 # fraction seconds:
 as.numeric(strptime(x, format="%Y-%m-%d %H:%M:%OS"))
 
 #### fichiers GPS, Argos.... :
-a$datetime <- as.POSIXct(strptime(as.character(a$datetime), "%d/%m/%Y %H:%M:%S"), tz="GMT")
+a$datetime <- as.POSIXct(strptime(as.character(a$datetime), "%d/%m/%Y %H:%M:%S"), tz="GMT")  
+                # utiliser paste() si Date et Heure dans deux colonnes différentes
 
 
 ### Time Zone
