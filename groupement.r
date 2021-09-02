@@ -2,7 +2,7 @@
 #### a function to group successive TRUE events of testing a vector with the same group number.
 #### return a vector (same length as test) giving the group number (NA if the result of the test is FALSE)
 
-####  David Pinaud 2015-07-06 R version 3.2.1 (2015-06-18)
+####  David Pinaud 2021-09-02 R version 4.1.1 (2021-08-10)
 
 
 grpt <- function(test) {    
