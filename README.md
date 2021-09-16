@@ -1,2 +1,2 @@
 # cebcscripts
-Collection of R script used in CEBC
+Collection of R scripts used in CEBC
